@@ -45,7 +45,7 @@ end
 def get_average_age_for_season(data, season)
     you_old_doh = 0
   how_many = 0
-    data[:"#{season}"].each do |i|
+    data[season].each do |i|
     you_old_doh += i["age"].to_f
     how_many += 1
     end  
